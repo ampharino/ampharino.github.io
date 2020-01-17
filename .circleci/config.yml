@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
+    working_directory: ~/ampharino.github.io
 
     steps:
       - checkout
@@ -35,3 +35,9 @@ jobs:
 
       # run tests!
       - run: yarn test
+
+workflows:
+  version: 2
+    build:
+      jobs:
+        - build
