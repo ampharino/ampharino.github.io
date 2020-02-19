@@ -1,0 +1,19 @@
+{
+  "name": "ampharino.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ampharino/ampharino.github.io.git",
+  "author": "ampharino <ampharin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "gatsby": "^2.19.18",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
