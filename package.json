@@ -6,7 +6,7 @@
   "author": "ampharino <ampharin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "gatsby": "^2.19.18",
