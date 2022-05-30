@@ -1,9 +1,9 @@
-const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const withPlugins = require("next-compose-plugins")
+const optimizedImages = require("next-optimized-images")
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-};
+}
 
-module.exports = withPlugins([optimizedImages], nextConfig);
+module.exports = withPlugins([optimizedImages], nextConfig)
