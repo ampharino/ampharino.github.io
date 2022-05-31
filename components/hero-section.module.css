@@ -1,0 +1,13 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-section {
+    flex-direction: row;
+  }
+}
+.hero-section > * {
+  flex: 1;
+}

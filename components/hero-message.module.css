@@ -1,0 +1,77 @@
+.hero-message {
+  font-size: 1em;
+  max-width: fit-content;
+}
+
+.hero-content {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-message {
+    font-size: 2em;
+  }
+  .hero-content {
+    font-size: 1.5em;
+  }
+}
+.hero-message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0.5em;
+  margin-right: 16px;
+}
+
+.wave-emoji {
+  animation-name: wave-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 1s steps(15, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(4deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(4deg);
+  }
+  40% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
