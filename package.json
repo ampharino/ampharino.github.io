@@ -43,7 +43,7 @@
     "**/*.{json,css,scss,md}": [
       "prettier --write"
     ],
-    "pages/**/*.{js,jsx,ts,tsx}": [
+    "!(*config).{js,jsx,ts,tsx}": [
       "prettier --write",
       "bash -c tsc",
       "npm run lint -- --fix"
