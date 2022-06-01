@@ -7,6 +7,15 @@
   font-size: 1em;
 }
 
+.hero-message-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0.5em;
+  margin-right: 16px;
+  align-items: center;
+}
+
 @media screen and (min-width: 900px) {
   .hero-message {
     font-size: 2em;
@@ -14,13 +23,9 @@
   .hero-content {
     font-size: 1.5em;
   }
-}
-.hero-message-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  padding: 0.5em;
-  margin-right: 16px;
+  .hero-message-container {
+    align-items: flex-start;
+  }
 }
 
 .wave-emoji {

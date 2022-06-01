@@ -1,6 +1,13 @@
 .hero-img img {
   width: 100%;
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 400px;
+  max-height: 300px;
   object-fit: contain;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-img img {
+    max-width: 800px;
+    max-height: 600px;
+  }
 }
