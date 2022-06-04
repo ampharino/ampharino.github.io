@@ -1,11 +1,9 @@
 .hero-message {
-  font-size: 0.8em;
   max-width: fit-content;
   color: #e59500ff;
 }
 
 .hero-subtitle {
-  font-size: 0.7em;
   color: #c6caedff;
 }
 
@@ -14,19 +12,29 @@
   flex-direction: column;
   max-width: 100%;
   padding: 0.5em;
-  align-items: center;
+  text-align: center;
 }
 
 @media screen and (min-width: 900px) {
-  .hero-message {
-    font-size: 1em;
-  }
-  .hero-subtitle {
-    font-size: 0.8em;
-  }
   .hero-message-container {
     align-items: flex-end;
     margin-right: 16px;
+  }
+
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    border-right: 0.15em solid transparent;
+    animation: typing 3s steps(30, end), blink-caret 0.6s step-end 5;
+  }
+
+  .typewriter--subtitle {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    border-right: 0.15em solid transparent;
+    animation: typing-subtitle 5s steps(20, end), blink-caret 0.6s step-end 5 3s;
   }
 }
 
@@ -45,22 +53,6 @@
   .hero-subtitle {
     font-size: 1.3em;
   }
-}
-
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  border-right: 0.15em solid transparent;
-  animation: typing 3s steps(30, end), blink-caret 0.6s step-end 5;
-}
-
-.typewriter--subtitle {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  border-right: 0.15em solid transparent;
-  animation: typing-subtitle 5s steps(20, end), blink-caret 0.6s step-end 5 3s;
 }
 
 /* The typing effect */
