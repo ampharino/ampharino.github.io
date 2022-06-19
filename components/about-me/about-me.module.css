@@ -1,0 +1,25 @@
+.description {
+  white-space: pre-line;
+}
+
+.title {
+  color: #53917eff;
+}
+
+.about-me {
+  padding: 16px 2rem;
+  background-color: #f1e8b8ff;
+  color: #171c28ff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 900px) {
+  .about-me {
+    padding: 16px 6rem;
+  }
+}

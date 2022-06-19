@@ -1,0 +1,17 @@
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 24px;
+}
+.social-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-link:hover {
+  opacity: 0.5;
+}
+
+.social-link span {
+  margin-left: 6px;
+}
